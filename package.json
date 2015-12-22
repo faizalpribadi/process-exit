@@ -1,6 +1,6 @@
 {
   "name": "process-exit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Signature API node.js process.exit",
   "license": "MIT",
   "repository": "faizalpribadi/process-exit",
@@ -12,8 +12,11 @@
   "engines": {
     "node": ">=0.12.0"
   },
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "xo && mocha"
+    "test": "mocha"
   },
   "files": [
     "index.js"
@@ -22,16 +25,11 @@
     "api process exit"
   ],
   "dependencies": {
-    "debug": "latest"
+    "debug": "latest",
+    "chalk": "1.1.1"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "xo": "^0.9.0"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "mocha"
-    ]
+    "mocha": "^2.3.4",
+    "expect.js": "0.3.1"
   }
 }
