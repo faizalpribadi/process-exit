@@ -15,7 +15,7 @@ $ npm install --save process-exit
 ```js
 var processExit = require('process-exit');
 
-processExit(1); // run with this DEBUG=process-exit* node *.js
+processExit(1);
 ```
 
 
