@@ -6,7 +6,6 @@
  * @author Faizal Pribadi <faizal.pribadi@gmail.com>
  */
 var debug = require('debug')('process-exit');
-var chalk = require('chalk');
 
 /**
  * This is reference api signature about 'process.exit'
@@ -75,7 +74,7 @@ var _codes = {
  * @param {number} code bind number code of process.exit
  */
 module.exports = function exit(code) {
-	debug('%', console.info(chalk.red(_codes[code])));
+	debug('%', console.info(_codes[code]));
 	return code in _codes ? process.exit(_codes[code]): _codes[0];
 };
 
